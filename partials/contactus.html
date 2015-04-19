@@ -1,0 +1,55 @@
+<header id="header" class="container">
+	<div class="page-header">    
+		<div class = "row">
+
+			<h2>Contact Us</h2>
+		</div>
+	</div>
+</header><!--header-->
+
+<div id="body" class="container" ng-controller="ContactusCtrl">
+	<div id = "contactus" class = "tab-pane">
+	  <div class="panel panel-primary">
+	    <div class="panel-heading">
+	      <div class="panel-title">
+	        <h3>Contact Us</h3>
+	      </div>
+	    </div><!-- panel heading -->
+	    <div class = "panel-body">
+	      <form name="contactUsForm" role="form" ng-submit="onButtonClick()">
+	        <div class="form-group">
+	          <label>Email Address</label>
+	          <div class="input-group">
+	          	<input type="email" ng-model=emailaddress required="true" class="form-control" placeholder="Enter your email address here"/>
+	          	<span class="input-group-addon info-text" ng-show=emailValid=="edit"><span class = "glyphicon glyphicon-pencil"></span></span>
+	          	<span class="input-group-addon error-text" ng-show=emailValid==false><span class = "glyphicon glyphicon-remove"></span></span>
+							<span class="input-group-addon valid-text" ng-show=emailValid==true><span class = "glyphicon glyphicon-ok"></span></span>
+	          </div> <!-- input group -->
+	        </div> <!-- form group -->
+	        <div class="form-group">
+	          <label>Subject</label>
+	          <div class="input-group">
+		          <input type="text" ng-model=subject required="true" class="form-control" placeholder="Enter your subject (30 letter max) here"/>
+		          <span class="input-group-addon info-text" ng-show=subjectValid=="edit"><span class = "glyphicon glyphicon-pencil"></span></span>
+							<span class="input-group-addon error-text" ng-show=subjectValid==false><span class = "glyphicon glyphicon-remove"></span></span>
+							<span class="input-group-addon valid-text" ng-show=subjectValid==true><span class = "glyphicon glyphicon-ok"></span></span>
+						</div> <!-- input group -->
+	          <span class="error-text" ng-show=subjectValid==false>30 character limit exceeded.</span>
+	        </div>	<!-- form group -->    	
+	        <div class="form-group">
+	          <label>Message</label>
+	          <textarea name="comment" type="text" ng-model=message required class="form-control" ng-class"{'error-text':'messsageValid==false'}" placeholder="Enter your message (500 letter max) here"></textarea>
+	        </div> <!-- form group -->
+	        <span class="error-text" ng-show=messageValid==false>500 character limit exceeded.</span>
+	        <input type="submit" id="submit" value="Submit" class="btn-primary"/>
+	        <div>
+	        	<p class="info-text" ng-show=messagePosted==true>Your message has been sent.</p>
+	        	<p class="error-text" ng-show=messagePosted==false>There was an error sending your message.</p>
+	        </div> <!-- info and error text -->
+	      </form>
+	    </div><!--panel body-->
+	  </div><!--contact us panel-->
+	</div><!--contact us tab pane-->  
+</div><!--body-->
+
+

@@ -1,0 +1,45 @@
+{
+	"defaultArticle" : "article1",
+	"filterFlags":
+		[ {
+				"displayName": "All",
+				"value": "blog" 
+			},
+			{
+				"displayName": "Musings & Motives",
+				"value": "personal"
+			},
+			{
+				"displayName": "Practical Advice",
+				"value": "practical"
+			},
+			{
+				"displayName": "Archived",
+			 	"value": "archived" 
+			}			
+		],
+	"articles" :
+	[
+		{
+			"id": "article1",
+			"flags": ["blog","personal"],
+			"title": "10 Things You Don’t Know About Me",
+			"date": "12/23/2014",
+			"file": "aboutme"
+		},
+		{
+			"id": "article3",
+			"flags": ["blog","practical"],
+			"title": "5 Reasons NOT to do Extreme Couponing",
+			"date": "10/3/2014",
+			"file": "savingmoneyonsomething"
+		},
+		{
+			"id": "article2",
+			"flags": ["blog","personal"],
+			"title": "Save Money. Relieve Stress. Eat Ben & Jerry’s",
+			"date": "11/31/2014",
+			"file": "benandjerry"
+		}
+	]
+}

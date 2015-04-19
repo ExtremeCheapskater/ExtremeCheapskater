@@ -1,0 +1,70 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar-default {
+  background-color: #FFFFFF;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: #9E1B24;
+  text-transform: uppercase;
+  padding-top: 20px;
+}
+
+a {
+  color: #9E1B24;
+}
+
+a:hover {
+  color: #000000;
+}
+
+.btn-primary {
+	background-color: #9E1B24;
+}
+
+.btn-primary:hover{
+	background-color: #000000;
+}
+
+.panel-primary{
+  border-color: #9E1B24;
+  border-top-width: 0px;
+}
+.panel-primary>.panel-heading {
+	background-color: #9E1B24;
+	border-color: #9E1B24;
+  border-top-width: 0px;
+}
+
+.page-header {
+  padding-bottom: 10px;
+}
+
+.block {
+  display: block;
+}
+
+.caption {
+  padding-bottom: 10px;
+}
+
+.error-text {
+  color: #FF0000;
+}
+
+.valid-text {
+  color: #00FF00;
+}
+
+.info-text {
+  color: #428bca;
+}
+
+.form-control {
+  resize: vertical;
+}

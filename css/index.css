@@ -1,0 +1,32 @@
+.socialicons {
+	color: #9E1B24;
+}
+
+@media (max-width: 400px) {
+	.small-socialicons {
+		display: block;
+		padding-bottom: 10px;
+	}	
+	.large-socialicons {
+		display: none;
+	}
+}
+
+@media (min-width: 768px) {
+	.small-socialicons {
+		display: block;
+	}	
+	.large-socialicons {
+		display: none;
+	}		
+}
+
+@media (min-width: 992px) {
+	.small-socialicons {
+		display: none;
+	}	
+	.large-socialicons {
+		display: block;
+	}		
+}
+

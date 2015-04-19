@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="CheapskaterApp">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Extreme Cheapskater</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/vendorcss/font-awesome-4.2.0/css/font-awesome.min.css">
+
+    <base href="/">
+    
+    <!-- Custom styles for this template -->
+    <link href="css/jumbotron.css" rel="stylesheet">
+    <link href="css/navbar-fixed-top.css" rel="stylesheet">
+    <link href="css/carousel.css" rel="stylesheet">
+    <link href="css/FAQ.css" rel="stylesheet">
+    <link href="css/gallery.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/blog.css" rel="stylesheet">
+    <link href="css/contactus.css" rel="stylesheet">
+  </head>
+
+  <body id="body" class="container">
+    <diy-nav-bar></diy-nav-bar> 
+
+    <ng-view onload="viewLoaded()"></ng-view>
+
+    <!-- social media links -->
+    <div id="socialmedia" class="bookmarktarget">
+      <h3>Stay in Touch!</h3>
+    </div>
+    <div class="socialicons row">
+      <div class="col-md-6">
+        <div class="large-socialicons">
+          <div class="fb-like" data-href="https://www.facebook.com/ExtremeCheapskater" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+          <div id="fb-root"></div> 
+        </div>
+        <div class="small-socialicons">
+          <div class="fb-like" data-href="https://www.facebook.com/ExtremeCheapskater" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <a href="https://twitter.com/ECheapskater" class="twitter-follow-button" data-show-count="false">Follow @ECheapskater</a>
+      </div>
+    </div><!-- socialicons -->
+
+    <div id="footer" class="container">    
+      <hr>
+      <footer ng-controller="FooterCtrl as footer">
+        <p>&copy;{{text}}</p>
+      </footer>
+    </div> <!--footer-->
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.min.js"></script>
+    <script type="text/javascript" src="js/services.js"></script>
+    <script type="text/javascript" src="js/global.js"></script>
+    <script type="text/javascript" src="js/gallery.js"></script>
+    <script type="text/javascript" src="js/blog.js"></script>
+    <script type="text/javascript" src="js/contactus.js"></script>
+    <script type="text/javascript" src="js/comment.js"></script>
+
+  </body>
+</html>

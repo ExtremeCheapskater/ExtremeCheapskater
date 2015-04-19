@@ -1,0 +1,26 @@
+{
+  "name": "cheapskater",
+  "version": "0.0.0",
+  "homepage": "https://github.com/ssn3398/cheapskater",
+  "authors": [
+    "ssn3398 <social3398@yahoo.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-route": "~1.3.6",
+    "angular-resource": "~1.3.13",
+    "angular": "~1.3.6",
+    "bootstrap": "~3.2.0",
+    "prototypejs": "~1.7.1"
+  },
+  "resolutions": {
+    "angular": "1.3.13"
+  }
+}

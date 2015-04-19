@@ -1,0 +1,32 @@
+.bloglist>li {
+	padding-top: 10px;
+	padding-left: 10px;
+	list-style: none;
+}	
+
+.bloglist>.btn-group {
+	margin-top: 15px;
+}
+
+.bloglist>h3 {
+	padding: 0px 35px;
+}
+
+.bloglist>li>i {
+	padding-right: 5px;
+}
+
+.bloglist>li>hr {
+	border-color: #9E1B24;
+}
+
+.shaded {
+	background-color: #F2F2E1;
+	max-width: 350px;
+	padding-bottom: 25px;
+}
+
+.caption {
+	color: #67A7EB;
+	font-variant: small-caps;
+}

@@ -1,0 +1,74 @@
+<header id="header" class="container">
+  <div class="page-header">   
+  	<div class = "row"> 
+  		<div class="col-md-7">
+        <div class = "carousel slide" id  = "carousel" data-interval = "5000">
+
+          <ol class = "carousel-indicators">
+            <li data-target="#carousel" data-slide-to="0" class = "active"></li>
+            <li data-target="#carousel" data-slide-to="1"></li>
+            <li data-target="#carousel" data-slide-to="2"></li>
+          </ol><!--indicators-->
+          <div class = "carousel-inner">              
+            <div class = "item active">
+              <div class = "carousel-caption">
+                <h3></h3>
+                <p></p>
+              </div>
+              <img src="images/Extreme-Cheapskater-h7.png" alt="1" class="splash img-responsive"/>
+            </div>            
+            <div class = "item">
+              <div class = "carousel-caption">
+                <h3>Your family trapped on a log?</h3>
+                <p class="text-uppercase">Read <a>here</a> how to get out of this situation.</p>
+              </div>                
+              <img src="images/kitten2.jpg" alt="2" class="img-responsive"/>
+            </div>
+            <div class = "item">
+              <div class = "carousel-caption">
+                <h3>Need a helping hand?</h3>
+                <p class="text-uppercase">Read <a>here</a> about advice on getting out of debt.</p>
+              </div>                
+              <img src="images/kitten3.jpg" alt="3" class="img-responsive"/>
+            </div>                                       
+          </div><!--carousel inner-->
+
+          <a data-target="#carousel" class="carousel-control left" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
+          <a data-target="#carousel" class="carousel-control right" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+        </div><!--carousel slide-->
+      </div><!--carousel-->
+
+	  	<div class="col-md-5">
+	  		<hr>
+  			<h3 class="text-center text-uppercase">Hello, Fellow Cheapsters!</h3>
+  			<hr>
+  			<p class="text-center">Pellentesque dolor nibh, interdum in quam vitae, aliquam venenatis libero. Cras sit amet condimentum ex. Donec vehicula nisl vitae nulla eleifend, consectetur sollicitudin magna pellentesque. Suspendisse potenti. Quisque finibus nisl quis efficitur consequat.</p>
+	  		<a href="#Index#socialmedia" class="text-uppercase text-center block">Get to know more about me here</a>      
+		  </div>
+  	</div>
+
+  </div>
+</header><!--header-->
+
+<div id="body" class="container">
+  
+  <div ng-controller="BlogCtrl">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <div class="panel-title">
+          <div id="mainArticle">
+            <h3>{{currentarticle.title}}</h3>
+            <p>{{currentarticle.date}}
+            <span class="pull-right"><em>{{author}}</em></span></p>
+          </div>
+        </div><!-- panel title -->
+      </div><!-- panel heading -->
+      <div class="panel-body">
+        <div ng-include="currentarticle.file"></div>
+        <comment-form></comment-form>
+        <div disqus=currentarticle.id></div>
+      </div><!-- panel body -->
+    </div><!-- panel -->
+	</div><!--controller -->
+</div><!--body-->
+
